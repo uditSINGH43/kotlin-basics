@@ -23,9 +23,9 @@ class Student(
     override val gender: String,
     val school: String,
     val klass: String
-): Human(name, age, gender){ init {
-    println("it take values from superclass by using //open// then use//override// to take value from superclass  ")
-}
+): Human(name, age, gender){
+    //it takes values from superclass by using //open// in class and attributes then use//override// to extract value from superclass into child
+
     override fun detail(){
         super.detail()
         println("i study in $school")
